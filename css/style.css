@@ -1,0 +1,1163 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One");
+/* line 11, ../sass/_main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* line 18, ../sass/_main.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 23, ../sass/_main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 28, ../sass/_main.scss */
+html,
+body {
+  min-height: 100%;
+}
+
+/* line 33, ../sass/_main.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 14px "Gentium Book Basic", "Times New Roman", Times, serif;
+  line-height: 1.428;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 45, ../sass/_main.scss */
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 51, ../sass/_main.scss */
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*--- Header ---*/
+/* line 58, ../sass/_main.scss */
+.navbar {
+  min-height: 110px;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  font-size: 20px !important;
+  line-height: 110px;
+}
+/* line 66, ../sass/_main.scss */
+.navbar .navbar-brand {
+  font-size: 32px;
+}
+/* line 70, ../sass/_main.scss */
+.navbar li a,
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  border-top: 5px solid transparent;
+  line-height: 65px;
+}
+
+/* line 79, ../sass/_main.scss */
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #ffffff;
+}
+/* line 86, ../sass/_main.scss */
+.navbar-nav li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 92, ../sass/_main.scss */
+.navbar-nav li.social a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 96, ../sass/_main.scss */
+.navbar-nav li.social a:hover {
+  border-top: 5px solid transparent;
+}
+/* line 99, ../sass/_main.scss */
+.navbar-nav li.social a i {
+  color: #cc9900;
+}
+/* line 102, ../sass/_main.scss */
+.navbar-nav li.social a i:hover {
+  color: #ffffff;
+}
+
+/* line 111, ../sass/_main.scss */
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:focus,
+.navbar-default .navbar-nav .active a:hover {
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/* line 120, ../sass/_main.scss */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+/* line 123, ../sass/_main.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+/* line 132, ../sass/_main.scss */
+.navbar-default .navbar-collapse {
+  border-color: #000;
+}
+
+/* line 137, ../sass/_main.scss */
+button.navbar-toggle:hover,
+button.navbar-toggle:active,
+button.navbar-toggle:focus {
+  background-color: transparent !important;
+  border: 1px solid #cc9900;
+}
+
+/* line 144, ../sass/_main.scss */
+button.navbar-toggle:hover .icon-bar,
+button.navbar-toggle:active .icon-bar,
+button.navbar-toggle:focus .icon-bar {
+  background-color: #cc9900;
+}
+
+/*--- Main ---*/
+/* line 151, ../sass/_main.scss */
+.main {
+  color: #ffffff;
+  padding: 180px 15px;
+  font-weight: 400;
+  min-height: 750px;
+  background: url(../images/main.jpg) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
+  z-index: 1;
+}
+/* line 163, ../sass/_main.scss */
+.main h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 90px;
+  max-width: 970px;
+  margin: 50px auto 30px;
+}
+/* line 170, ../sass/_main.scss */
+.main img {
+  max-width: 232px;
+  width: 100%;
+}
+/* line 175, ../sass/_main.scss */
+.main .button {
+  margin-top: 30px;
+}
+/* line 179, ../sass/_main.scss */
+.main .btn {
+  margin: 0 15px;
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/* line 190, ../sass/_main.scss */
+.main .btn:hover,
+.main .btn:focus {
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+/*--- About ---*/
+/* line 199, ../sass/_main.scss */
+#about {
+  margin: 0 auto;
+  padding: 90px 0 50px;
+  background: url(../images/pattern.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+/* line 206, ../sass/_main.scss */
+#about h1 {
+  font-size: 36px;
+  color: #cc9900;
+  margin-bottom: 10px;
+}
+/* line 212, ../sass/_main.scss */
+#about img.divider {
+  max-width: 247px;
+  width: 100%;
+}
+/* line 217, ../sass/_main.scss */
+#about p.text {
+  font-size: 16px;
+  color: #4c4c4c;
+  margin: 35px auto 40px;
+}
+/* line 223, ../sass/_main.scss */
+#about img.cook {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 228, ../sass/_main.scss */
+#about img.dish {
+  max-width: 621px;
+  width: 100%;
+  max-height: 625px;
+  height: 100%;
+}
+
+/*--- Section Ingredients ---*/
+/* line 237, ../sass/_main.scss */
+#ingredients {
+  padding: 100px 0;
+  background: url(../images/bg2.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+/* line 243, ../sass/_main.scss */
+#ingredients .content {
+  margin: 0 auto;
+  padding: 80px 60px;
+  background: url(../images/bg1.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+/* line 251, ../sass/_main.scss */
+#ingredients .content h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+/* line 257, ../sass/_main.scss */
+#ingredients .content img.divider {
+  max-width: 247px;
+  width: 100%;
+}
+/* line 262, ../sass/_main.scss */
+#ingredients .content p {
+  margin: 30px auto 60px;
+  font-size: 16px;
+}
+/* line 268, ../sass/_main.scss */
+#ingredients .content .pics img {
+  margin: 0 10px;
+}
+/* line 272, ../sass/_main.scss */
+#ingredients .content .pics .pic1:hover,
+#ingredients .content .pics .pic2:hover,
+#ingredients .content .pics .pic3:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*--- Section Menu ---*/
+/* line 283, ../sass/_main.scss */
+#menu {
+  padding: 100px 0 50px;
+  background: url(../images/pattern1.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+/* line 290, ../sass/_main.scss */
+.menu-group {
+  position: relative;
+  color: #cc9900;
+  margin: 0 60px 50px;
+}
+/* line 295, ../sass/_main.scss */
+.menu-group h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+/* line 300, ../sass/_main.scss */
+.menu-group img {
+  max-width: 247px;
+  width: 100%;
+}
+/* line 305, ../sass/_main.scss */
+.menu-group .menu-entry {
+  margin: 30px auto;
+}
+/* line 308, ../sass/_main.scss */
+.menu-group .menu-entry .menu-entry__head {
+  width: 100%;
+  display: inline-block;
+}
+/* line 313, ../sass/_main.scss */
+.menu-group .menu-entry .menu-entry_title {
+  float: left;
+  font-size: 24px;
+}
+/* line 318, ../sass/_main.scss */
+.menu-group .menu-entry .menu-entry_price {
+  float: right;
+  font-size: 24px;
+}
+/* line 323, ../sass/_main.scss */
+.menu-group .menu-entry .entry-menu_text {
+  clear: both;
+  border-top: 1px solid #cc9900;
+  text-align: left;
+}
+/* line 328, ../sass/_main.scss */
+.menu-group .menu-entry .entry-menu_text p {
+  font-size: 15px;
+  color: #4c4c4c;
+  margin-top: 10px;
+}
+
+/*--- Section Reviews ---*/
+/* line 338, ../sass/_main.scss */
+#reviews {
+  padding: 100px 0;
+  background: url(../images/bg3.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+/* line 345, ../sass/_main.scss */
+.reviews {
+  background: url(../images/bg3-1.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  padding: 60px 60px 50px;
+}
+/* line 352, ../sass/_main.scss */
+.reviews h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+/* line 358, ../sass/_main.scss */
+.reviews img.divider {
+  max-width: 247px;
+  width: 100%;
+}
+/* line 363, ../sass/_main.scss */
+.reviews p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* line 370, ../sass/_main.scss */
+.carousel {
+  padding-bottom: 50px;
+}
+
+/* line 374, ../sass/_main.scss */
+.carousel-indicators {
+  bottom: 0;
+}
+
+/*--- Section Reservations ---*/
+/* line 379, ../sass/_main.scss */
+#reservations {
+  padding: 100px 0 60px;
+  background: url(../images/pattern2.png) no-repeat center;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+/* line 385, ../sass/_main.scss */
+#reservations img.pic {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+/* line 391, ../sass/_main.scss */
+#reservations .booking {
+  padding: 0 60px;
+}
+/* line 394, ../sass/_main.scss */
+#reservations .booking h1 {
+  color: #cc9900;
+  font-size: 36px;
+}
+/* line 399, ../sass/_main.scss */
+#reservations .booking img {
+  margin: 10px 0 25px;
+}
+/* line 403, ../sass/_main.scss */
+#reservations .booking img.divider {
+  max-width: 247px;
+  width: 100%;
+}
+/* line 408, ../sass/_main.scss */
+#reservations .booking p {
+  font-size: 16px;
+  color: #4c4c4c;
+}
+/* line 414, ../sass/_main.scss */
+#reservations .booking-form {
+  padding: 20px 60px 0;
+}
+/* line 417, ../sass/_main.scss */
+#reservations .booking-form .form-group {
+  margin-bottom: 20px;
+}
+/* line 420, ../sass/_main.scss */
+#reservations .booking-form .form-group label {
+  font-size: 14px;
+  color: #cc9900;
+}
+/* line 425, ../sass/_main.scss */
+#reservations .booking-form .form-group .btn-book {
+  margin: 15px auto 0;
+  padding: 8px 60px;
+  font-size: 16px;
+  background-color: #cc9900;
+  color: #ffffff;
+  border: 1px solid #cc9900;
+  border-radius: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/* line 436, ../sass/_main.scss */
+#reservations .booking-form .form-group .btn-book:hover,
+#reservations .booking-form .form-group .btn-book:focus {
+  background-color: #ecb100;
+}
+/* line 443, ../sass/_main.scss */
+#reservations div.col-sm-12.form-group {
+  margin-bottom: 10px !important;
+}
+/* line 447, ../sass/_main.scss */
+#reservations .form-control {
+  border-radius: 0;
+}
+
+/*--- Footer ---*/
+/* line 453, ../sass/_main.scss */
+footer {
+  background-color: #191919;
+  color: #ffffff;
+  padding: 50px 0;
+  margin: 0;
+}
+/* line 459, ../sass/_main.scss */
+footer h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+/* line 464, ../sass/_main.scss */
+footer img.decor {
+  max-width: 199px;
+  width: 100%;
+}
+/* line 469, ../sass/_main.scss */
+footer p {
+  margin: 0;
+}
+/* line 473, ../sass/_main.scss */
+footer .col-sm-4 {
+  margin-bottom: 30px;
+}
+/* line 477, ../sass/_main.scss */
+footer p.foot_text {
+  font-size: 16px;
+  margin-top: 20px;
+}
+/* line 482, ../sass/_main.scss */
+footer .hours {
+  margin: 20px auto 43px;
+}
+/* line 485, ../sass/_main.scss */
+footer .hours p {
+  font-size: 16px;
+  margin: 0;
+}
+/* line 491, ../sass/_main.scss */
+footer .address {
+  margin: 20px auto 44px;
+}
+/* line 494, ../sass/_main.scss */
+footer .address p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+/* line 501, ../sass/_main.scss */
+footer .foot_social a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* line 505, ../sass/_main.scss */
+footer .foot_social a i {
+  color: #ffffff;
+  font-size: 16px;
+}
+/* line 509, ../sass/_main.scss */
+footer .foot_social a i:hover {
+  color: #cc9900;
+}
+
+@media screen and (max-width: 1200px) {
+  /*--- Header ---*/
+  /* line 517, ../sass/_main.scss */
+  .navbar {
+    font-size: 18px !important;
+  }
+
+  /*--- Main ---*/
+  /* line 523, ../sass/_main.scss */
+  .main h1 {
+    font-size: 86px;
+    max-width: 940px;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 531, ../sass/_main.scss */
+  #ingredients .content {
+    padding: 70px 40px;
+  }
+  /* line 534, ../sass/_main.scss */
+  #ingredients .content p {
+    margin: 30px auto 50px;
+  }
+  /* line 539, ../sass/_main.scss */
+  #ingredients .content .pics img {
+    margin: 0 3px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 547, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 50px 50px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 554, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 30px;
+  }
+  /* line 557, ../sass/_main.scss */
+  #reservations .booking p {
+    font-size: 16px;
+  }
+  /* line 562, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 30px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*--- Header ---*/
+  /* line 572, ../sass/_main.scss */
+  .navbar {
+    font-size: 17px !important;
+  }
+
+  /* line 576, ../sass/_main.scss */
+  .navbar-nav > li > a {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  /*--- Main ---*/
+  /* line 583, ../sass/_main.scss */
+  .main h1 {
+    font-size: 85px;
+  }
+
+  /*--- About ---*/
+  /* line 589, ../sass/_main.scss */
+  #about {
+    padding: 90px 0 45px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 595, ../sass/_main.scss */
+  #menu {
+    padding: 90px 0 40px;
+  }
+
+  /* line 599, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 40px 50px;
+  }
+
+  /*--- Section Reviews ---*/
+  /* line 604, ../sass/_main.scss */
+  .reviews {
+    padding: 60px 55px 50px;
+  }
+  /* line 607, ../sass/_main.scss */
+  .reviews p {
+    font-size: 19px;
+  }
+
+  /*--- Footer ---*/
+  /* line 613, ../sass/_main.scss */
+  footer {
+    padding: 50px 0 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /*--- Header ---*/
+  /* line 620, ../sass/_main.scss */
+  .navbar {
+    font-size: 16px !important;
+  }
+  /* line 623, ../sass/_main.scss */
+  .navbar .navbar-brand {
+    font-size: 28px;
+  }
+
+  /* line 628, ../sass/_main.scss */
+  .navbar-nav li a {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  /*--- Main ---*/
+  /* line 635, ../sass/_main.scss */
+  .main h1 {
+    font-size: 82px;
+    max-width: 900px;
+    margin: 50px auto 30px;
+  }
+  /* line 641, ../sass/_main.scss */
+  .main .btn {
+    padding: 13px 40px;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 647, ../sass/_main.scss */
+  #ingredients {
+    padding: 90px 0;
+  }
+  /* line 650, ../sass/_main.scss */
+  #ingredients .content {
+    padding: 50px 20px;
+  }
+  /* line 654, ../sass/_main.scss */
+  #ingredients .content .pics img {
+    margin: 0 1px;
+    max-width: 85px;
+    max-height: 90px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 664, ../sass/_main.scss */
+  #menu {
+    padding: 90px 0 40px;
+  }
+
+  /* line 668, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 20px 45px;
+  }
+  /* line 671, ../sass/_main.scss */
+  .menu-group h1 {
+    font-size: 34px;
+  }
+  /* line 675, ../sass/_main.scss */
+  .menu-group .menu-entry {
+    margin: 25px auto;
+  }
+  /* line 678, ../sass/_main.scss */
+  .menu-group .menu-entry .menu-entry_title {
+    font-size: 23px;
+  }
+  /* line 682, ../sass/_main.scss */
+  .menu-group .menu-entry .menu-entry_price {
+    font-size: 23px;
+  }
+
+  /*--- Section Reviews ---*/
+  /* line 689, ../sass/_main.scss */
+  #reviews {
+    padding: 100px 0 90px;
+  }
+
+  /* line 693, ../sass/_main.scss */
+  .reviews {
+    padding: 50px 45px 45px;
+  }
+  /* line 696, ../sass/_main.scss */
+  .reviews h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  /* line 701, ../sass/_main.scss */
+  .reviews p {
+    font-size: 18px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 709, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 10px;
+  }
+  /* line 713, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 10px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*--- Header ---*/
+  /* line 721, ../sass/_main.scss */
+  .navbar {
+    font-size: 16px !important;
+    min-height: 50px;
+  }
+  /* line 725, ../sass/_main.scss */
+  .navbar li a,
+  .navbar .navbar-brand {
+    color: #ffffff !important;
+    border-top: none;
+  }
+  /* line 731, ../sass/_main.scss */
+  .navbar li a {
+    line-height: 20px;
+  }
+  /* line 735, ../sass/_main.scss */
+  .navbar .navbar-brand {
+    font-size: 26px;
+    line-height: 20px;
+  }
+
+  /* line 742, ../sass/_main.scss */
+  .navbar-nav li a {
+    padding: 12px 15px;
+  }
+  /* line 745, ../sass/_main.scss */
+  .navbar-nav li.social a {
+    display: none;
+  }
+  /* line 749, ../sass/_main.scss */
+  .navbar-nav li a:hover {
+    color: #ffffff !important;
+    border-top: none;
+    background-color: rgba(204, 153, 0, 0.5) !important;
+  }
+
+  /* line 757, ../sass/_main.scss */
+  .navbar-default .navbar-nav .active a,
+  .navbar-default .navbar-nav .active a:focus,
+  .navbar-default .navbar-nav .active a:hover {
+    color: #ffffff;
+    border-top: none;
+    background-color: rgba(204, 153, 0, 0.6);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+
+  /* line 767, ../sass/_main.scss */
+  .navbar-toggle {
+    margin-top: 8px;
+  }
+
+  /*--- Main ---*/
+  /* line 772, ../sass/_main.scss */
+  .main {
+    padding: 170px 15px;
+  }
+  /* line 775, ../sass/_main.scss */
+  .main h1 {
+    font-size: 76px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
+  /* line 781, ../sass/_main.scss */
+  .main .button {
+    margin-top: 15px;
+  }
+  /* line 785, ../sass/_main.scss */
+  .main .btn {
+    margin: 15px 15px 5px;
+    padding: 13px 40px;
+    font-size: 17px;
+  }
+
+  /*--- About ---*/
+  /* line 793, ../sass/_main.scss */
+  #about {
+    padding: 90px 0 40px;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 798, ../sass/_main.scss */
+  #ingredients {
+    padding: 90px 0 70px;
+  }
+  /* line 802, ../sass/_main.scss */
+  #ingredients .content p {
+    margin: 30px auto 40px;
+  }
+  /* line 807, ../sass/_main.scss */
+  #ingredients .content .pics img {
+    margin: 0 5px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 815, ../sass/_main.scss */
+  #menu {
+    padding: 90px 0 20px;
+  }
+
+  /* line 819, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 55px 45px;
+  }
+  /* line 822, ../sass/_main.scss */
+  .menu-group .menu-entry {
+    margin: 20px auto;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 830, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 50px;
+  }
+  /* line 834, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 50px 0;
+  }
+
+  /*--- Footer ---*/
+  /* line 841, ../sass/_main.scss */
+  footer {
+    padding: 50px 0 25px;
+  }
+  /* line 844, ../sass/_main.scss */
+  footer h3 {
+    margin-bottom: 12px;
+  }
+  /* line 848, ../sass/_main.scss */
+  footer .col-sm-4 {
+    margin-bottom: 35px;
+  }
+  /* line 852, ../sass/_main.scss */
+  footer .hours {
+    margin: 20px auto 15px;
+  }
+  /* line 856, ../sass/_main.scss */
+  footer .address {
+    margin: 20px auto 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /*--- Main ---*/
+  /* line 866, ../sass/_main.scss */
+  .main {
+    padding: 170px 15px;
+  }
+  /* line 869, ../sass/_main.scss */
+  .main h1 {
+    font-size: 74px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 875, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 25px 45px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 882, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 40px;
+  }
+  /* line 886, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 40px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*--- Main ---*/
+  /* line 894, ../sass/_main.scss */
+  .main {
+    padding: 145px 5px;
+  }
+  /* line 897, ../sass/_main.scss */
+  .main h1 {
+    font-size: 66px;
+  }
+  /* line 901, ../sass/_main.scss */
+  .main .btn {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+
+  /*--- About ---*/
+  /* line 909, ../sass/_main.scss */
+  #about p.text {
+    margin: 30px auto 30px;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 915, ../sass/_main.scss */
+  #ingredients {
+    padding: 90px 0 60px;
+  }
+  /* line 919, ../sass/_main.scss */
+  #ingredients .content p {
+    margin: 30px auto 40px;
+  }
+  /* line 924, ../sass/_main.scss */
+  #ingredients .content .pics img {
+    margin: 0 4px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 932, ../sass/_main.scss */
+  #menu {
+    padding: 90px 0 20px;
+  }
+
+  /* line 936, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 15px 35px;
+  }
+  /* line 939, ../sass/_main.scss */
+  .menu-group h1 {
+    font-size: 33px;
+    margin-bottom: 7px;
+  }
+  /* line 944, ../sass/_main.scss */
+  .menu-group .menu-entry {
+    margin: 20px auto;
+  }
+  /* line 947, ../sass/_main.scss */
+  .menu-group .menu-entry .menu-entry_title {
+    font-size: 22px;
+  }
+  /* line 951, ../sass/_main.scss */
+  .menu-group .menu-entry .menu-entry_price {
+    font-size: 22px;
+  }
+  /* line 956, ../sass/_main.scss */
+  .menu-group .menu-entry .entry-menu_text p {
+    font-size: 14px;
+  }
+
+  /*--- Section Reviews ---*/
+  /* line 964, ../sass/_main.scss */
+  #reviews {
+    padding: 100px 0 90px;
+  }
+
+  /* line 968, ../sass/_main.scss */
+  .reviews {
+    padding: 50px 35px 40px;
+  }
+  /* line 971, ../sass/_main.scss */
+  .reviews h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 976, ../sass/_main.scss */
+  .reviews p {
+    font-size: 17px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 983, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 25px;
+  }
+  /* line 987, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 25px 0;
+  }
+  /* line 990, ../sass/_main.scss */
+  #reservations .booking-form .form-group {
+    margin-bottom: 15px;
+  }
+
+  /*--- Footer ---*/
+  /* line 997, ../sass/_main.scss */
+  footer {
+    padding: 50px 0 20px;
+  }
+  /* line 1000, ../sass/_main.scss */
+  footer h3 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  /*--- Main ---*/
+  /* line 1008, ../sass/_main.scss */
+  .main {
+    padding: 140px 2px;
+  }
+  /* line 1011, ../sass/_main.scss */
+  .main h1 {
+    font-size: 63px;
+    word-wrap: break-word;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 1019, ../sass/_main.scss */
+  #ingredients .content {
+    padding: 45px 15px;
+  }
+  /* line 1023, ../sass/_main.scss */
+  #ingredients .content .pics img {
+    margin: 0 2px;
+  }
+
+  /*--- Section Menu ---*/
+  /* line 1031, ../sass/_main.scss */
+  .menu-group {
+    margin: 0 5px 35px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 1036, ../sass/_main.scss */
+  #reservations {
+    padding: 90px 0 50px;
+  }
+  /* line 1039, ../sass/_main.scss */
+  #reservations img.pic {
+    margin-bottom: 35px;
+  }
+  /* line 1043, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 15px;
+  }
+  /* line 1047, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 10px 15px 0;
+  }
+
+  /*--- Footer ---*/
+  /* line 1053, ../sass/_main.scss */
+  footer {
+    padding: 45px 0 15px;
+  }
+  /* line 1056, ../sass/_main.scss */
+  footer .col-sm-4 {
+    margin-bottom: 30px;
+  }
+  /* line 1060, ../sass/_main.scss */
+  footer p.foot_text {
+    font-size: 15px;
+  }
+  /* line 1065, ../sass/_main.scss */
+  footer .hours p {
+    font-size: 15px;
+  }
+  /* line 1071, ../sass/_main.scss */
+  footer .address p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  /*--- Main ---*/
+  /* line 1080, ../sass/_main.scss */
+  .main {
+    padding: 140px 2px;
+  }
+  /* line 1083, ../sass/_main.scss */
+  .main h1 {
+    font-size: 60px;
+    word-wrap: break-word;
+  }
+  /* line 1088, ../sass/_main.scss */
+  .main .btn {
+    margin: 15px 15px 0;
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+
+  /*--- About ---*/
+  /* line 1096, ../sass/_main.scss */
+  #about {
+    padding: 90px 0 40px;
+  }
+  /* line 1099, ../sass/_main.scss */
+  #about h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 1104, ../sass/_main.scss */
+  #about p.text {
+    font-size: 16px;
+    margin: 30px auto 30px;
+  }
+  /* line 1109, ../sass/_main.scss */
+  #about img.cook {
+    margin-bottom: 20px;
+  }
+
+  /*--- Section Ingredients ---*/
+  /* line 1116, ../sass/_main.scss */
+  #ingredients .content {
+    padding: 40px 15px;
+  }
+  /* line 1119, ../sass/_main.scss */
+  #ingredients .content h1 {
+    font-size: 35px;
+  }
+
+  /*--- Section Reviews ---*/
+  /* line 1126, ../sass/_main.scss */
+  #reviews {
+    padding: 100px 0 80px;
+  }
+
+  /* line 1130, ../sass/_main.scss */
+  .reviews {
+    padding: 40px 30px 35px;
+  }
+  /* line 1133, ../sass/_main.scss */
+  .reviews h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 1138, ../sass/_main.scss */
+  .reviews p {
+    font-size: 16px;
+  }
+
+  /*--- Section Reservations ---*/
+  /* line 1145, ../sass/_main.scss */
+  #reservations img.pic {
+    margin-bottom: 30px;
+  }
+  /* line 1149, ../sass/_main.scss */
+  #reservations .booking {
+    padding: 0 10px;
+  }
+  /* line 1152, ../sass/_main.scss */
+  #reservations .booking h1 {
+    font-size: 35px;
+  }
+  /* line 1157, ../sass/_main.scss */
+  #reservations .booking-form {
+    padding: 20px 10px 0;
+  }
+}

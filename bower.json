@@ -1,0 +1,12 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+  	"html5-boilerplate": "^5.3.x",
+    "bootstrap": "3.3.x",
+    "jquery": "2.2.x",
+    "font-awesome": "4.*"
+  }
+}

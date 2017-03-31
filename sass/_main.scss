@@ -1,0 +1,1161 @@
+$font: 'Gentium Book Basic', 'Times New Roman', Times, serif;
+$color-white: #ffffff;
+$color-black: #4c4c4c;
+$color-yellow: #cc9900;
+
+@mixin transition {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 14px $font;
+  line-height: 1.428;
+  color: #1b1b1b;
+  background-color: $color-white;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+h2, 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*--- Header ---*/
+.navbar {
+	min-height: 110px;
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,.5);
+	border: 0;
+	font-size: 20px !important;
+	line-height: 110px;
+
+  	.navbar-brand {
+  		font-size: 32px;
+	}
+
+	li a, 
+	.navbar-brand { 
+		color: $color-white !important;
+		border-top: 5px solid transparent;
+		line-height: 65px;
+	}
+}
+
+.navbar-nav {
+	li a:hover,
+	li.active a {
+		color: $color-white !important;
+		background-color: rgba(0,0,0,.2);
+		border-top:5px solid $color-white;
+	}
+
+	li a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	li.social {
+		a {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		a:hover {
+			border-top: 5px solid transparent;
+		}
+		a i {
+			color: $color-yellow;
+		}
+		a i:hover {
+			color: $color-white;
+		}
+	}
+}
+
+.navbar-default {
+
+	.navbar-nav .active {
+		a,
+		a:focus,
+		a:hover {
+			color: $color-white;
+			background-color: transparent;
+			@include transition;
+		}
+	}
+
+	.navbar-toggle {
+		border-color: transparent;
+
+		.icon-bar {
+			background-color: $color-white;
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+		}
+	}
+
+	.navbar-collapse {
+		border-color: #000;
+	}
+}
+
+button.navbar-toggle:hover, 
+button.navbar-toggle:active, 
+button.navbar-toggle:focus {
+	background-color: transparent !important;
+	border: 1px solid $color-yellow;
+}
+
+button.navbar-toggle:hover .icon-bar,
+button.navbar-toggle:active .icon-bar, 
+button.navbar-toggle:focus .icon-bar {
+  background-color: $color-yellow;
+}
+
+/*--- Main ---*/
+.main {
+	color: $color-white;
+	padding: 180px 15px;
+	font-weight: 400;
+	min-height: 750px;
+	background: url(../images/main.jpg) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 0;
+	z-index: 1;
+
+	h1 {
+		font-family: 'Yeseva One', cursive;
+		font-size: 90px;
+		max-width: 970px;
+		margin: 50px auto 30px;
+	}
+
+	img {
+		max-width: 232px;
+		width: 100%;
+	}
+
+	.button {
+		margin-top: 30px;
+	}
+
+	.btn {
+		margin: 0 15px;
+		padding: 15px 40px;
+		font-size: 18px;
+		background-color: rgba(0,0,0,.6);
+		color: rgba(255,255,255,1);
+		border: 1px solid #000;
+		border-radius: 0;
+		@include transition;
+	}
+
+	.btn:hover, 
+	.btn:focus {
+		border: 1px solid $color-white;
+		background-color: rgba(255,255,255,.4);
+		color: rgba(255,255,255,1);
+	}
+}
+
+/*--- About ---*/
+#about {
+	margin: 0 auto;
+	padding: 90px 0 50px;
+	background: url(../images/pattern.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+
+	h1 {
+		font-size: 36px;
+		color: $color-yellow;
+		margin-bottom: 10px;
+	}
+
+	img.divider {
+		max-width: 247px;
+		width: 100%;
+	}
+
+	p.text {
+		font-size: 16px;
+		color: $color-black;
+		margin: 35px auto 40px;
+	}
+
+	img.cook {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	img.dish {
+		max-width: 621px;
+		width: 100%;
+		max-height: 625px;
+		height: 100%;
+	}
+}
+
+/*--- Section Ingredients ---*/
+#ingredients {
+	padding: 100px 0;
+	background: url(../images/bg2.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+
+	.content {
+		margin: 0 auto;
+		padding: 80px 60px;
+		background: url(../images/bg1.png) no-repeat center;
+		-ms-background-size: cover;
+		background-size: cover;
+		color: $color-white;
+
+		h1 {
+			font-size: 36px;
+			color: $color-white;
+			margin-bottom: 10px;
+		}
+
+		img.divider {
+			max-width: 247px;
+			width: 100%;
+		}
+
+		p {
+			margin: 30px auto 60px;
+			font-size: 16px;
+		}
+
+		.pics {
+			img {
+				margin: 0 10px;
+			}
+		
+			.pic1:hover,
+			.pic2:hover,
+			.pic3:hover {
+				-webkit-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+
+/*--- Section Menu ---*/
+#menu {
+	padding: 100px 0 50px;
+	background: url(../images/pattern1.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
+.menu-group {
+	position: relative;
+	color: $color-yellow;
+	margin: 0 60px 50px;
+
+	h1 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+
+	img {
+		max-width: 247px;
+		width: 100%;
+	}
+
+	.menu-entry {
+		margin: 30px auto;
+
+		.menu-entry__head {
+			width: 100%;
+			display: inline-block; 
+		}
+
+		.menu-entry_title {
+			float: left;
+			font-size: 24px;
+		}
+
+		.menu-entry_price {
+			float: right;
+			font-size: 24px;
+		}
+
+		.entry-menu_text {
+			clear: both;
+			border-top: 1px solid $color-yellow;
+			text-align: left;
+
+			p {
+				font-size: 15px;
+				color: $color-black;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+/*--- Section Reviews ---*/
+#reviews {
+	padding: 100px 0;
+	background: url(../images/bg3.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
+.reviews {
+	background: url(../images/bg3-1.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+	color: $color-white;
+	padding: 60px 60px 50px;
+
+	h1 {
+		color: $color-white;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	img.divider {
+		max-width: 247px;
+		width: 100%;
+	}
+
+	p {
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+.carousel {
+	padding-bottom: 50px;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+/*--- Section Reservations ---*/
+#reservations {
+	padding: 100px 0 60px;
+	background: url(../images/pattern2.png) no-repeat center;
+	-ms-background-size: cover;
+	background-size: cover;
+
+	img.pic {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 40px;
+	}
+
+	.booking {
+		padding: 0 60px;
+
+		h1 {
+			color: $color-yellow;
+			font-size: 36px;
+		}
+
+		img {
+			margin: 10px 0 25px;
+		}
+
+		img.divider {
+			max-width: 247px;
+			width: 100%;
+		}
+
+		p {
+			font-size: 16px;
+			color: $color-black;
+		}
+	}
+
+	.booking-form {
+		padding: 20px 60px 0;
+
+		.form-group {
+	 		margin-bottom: 20px;
+
+	 		label {
+				font-size: 14px;
+				color: $color-yellow;
+			}
+
+			.btn-book {
+				margin: 15px auto 0;
+				padding: 8px 60px;
+				font-size: 16px;
+				background-color: $color-yellow;
+				color: $color-white;
+				border: 1px solid $color-yellow;
+				border-radius: 0;
+				@include transition;
+			}
+
+			.btn-book:hover, 
+			.btn-book:focus {
+				background-color: lighten($color-yellow, 6.2%);
+			}
+		}
+	}
+
+	div.col-sm-12.form-group {
+		margin-bottom: 10px !important;
+	}
+
+	.form-control {
+		border-radius: 0;
+	}
+}
+
+/*--- Footer ---*/
+footer {
+	background-color: #191919;
+	color: $color-white;
+	padding: 50px 0;
+	margin: 0;
+
+	h3 {
+		font-size: 21px;
+		margin-bottom: 15px;
+	}
+
+	img.decor {
+		max-width: 199px;
+		width: 100%;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.col-sm-4 {
+		margin-bottom: 30px;
+	}
+
+	p.foot_text {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	.hours {
+		margin: 20px auto 43px;
+
+		p {
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+
+	.address {
+		margin: 20px auto 44px;
+
+		p {
+			font-size: 16px;
+			font-weight: bold;
+			margin: 0;
+		}
+	}
+
+	.foot_social a {
+		margin-right: 5px;
+		margin-left: 5px;
+
+		i {
+			color: $color-white;
+			font-size: 16px;
+		}
+		i:hover {
+			color: $color-yellow;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	/*--- Header ---*/
+	.navbar {
+		font-size: 18px !important;
+	}
+
+  	/*--- Main ---*/
+	.main {
+		h1 {
+			font-size: 86px;
+			max-width: 940px;
+		}
+	}
+
+	/*--- Section Ingredients ---*/
+	#ingredients {
+		.content {
+			padding: 70px 40px;
+
+			p {
+				margin: 30px auto 50px;
+			}
+
+			.pics {
+				img {
+					margin: 0 3px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Menu ---*/
+	.menu-group {
+		margin: 0 50px 50px;
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+
+		.booking {
+			padding: 0 30px;
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		.booking-form {
+			padding: 20px 30px 0;
+		}
+	}
+	
+
+}
+
+@media screen and (max-width: 1024px) {
+	/*--- Header ---*/
+	.navbar {
+		font-size: 17px !important;
+	}
+
+	.navbar-nav>li>a {
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+
+  	/*--- Main ---*/
+	.main {
+		h1 {
+			font-size: 85px;
+		}
+	}
+
+	/*--- About ---*/
+	#about {
+		padding: 90px 0 45px;
+	}
+
+
+	/*--- Section Menu ---*/
+	#menu {
+		padding: 90px 0 40px;
+	}
+
+	.menu-group {
+		margin: 0 40px 50px;
+	}
+
+	/*--- Section Reviews ---*/
+	.reviews {
+		padding: 60px 55px 50px;
+
+		p {
+			font-size: 19px;
+		}
+	}
+
+	/*--- Footer ---*/
+	footer {
+		padding: 50px 0 30px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	/*--- Header ---*/
+	.navbar {
+		font-size: 16px !important;
+
+		.navbar-brand {
+			font-size: 28px;
+		}
+	}
+
+	.navbar-nav li a {
+		padding-right: 13px;
+		padding-left: 13px;
+	}
+
+	/*--- Main ---*/
+	.main {
+		h1 {
+			font-size: 82px;
+			max-width: 900px;
+			margin: 50px auto 30px;
+		}
+	
+		.btn {
+			padding: 13px 40px;
+		}
+	}
+
+  	/*--- Section Ingredients ---*/
+	#ingredients {
+		padding: 90px 0;
+
+		.content {
+			padding: 50px 20px;
+
+			.pics {
+				img {
+					margin: 0 1px;
+					max-width: 85px;
+					max-height: 90px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Menu ---*/
+	#menu {
+		padding: 90px 0 40px;
+	}
+
+	.menu-group {
+		margin: 0 20px 45px;
+
+		h1 {
+			font-size: 34px;
+		}
+
+		.menu-entry {
+			margin: 25px auto;
+
+			.menu-entry_title {
+				font-size: 23px;
+			}
+
+			.menu-entry_price {
+				font-size: 23px;
+			}
+		}
+	}
+
+	/*--- Section Reviews ---*/
+	#reviews {
+		padding: 100px 0 90px;
+	}
+
+	.reviews {
+		padding: 50px 45px 45px;
+
+		h1 {
+			font-size: 35px;
+			margin-bottom: 15px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+
+		.booking {
+			padding: 0 10px;
+		}
+
+		.booking-form {
+			padding: 20px 10px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/*--- Header ---*/
+	.navbar {
+		font-size: 16px !important;
+		min-height: 50px;
+
+		li a,
+		.navbar-brand {
+			color: $color-white !important;
+			border-top:none;
+		}
+
+		li a {
+			line-height: 20px;
+		}
+
+		.navbar-brand {
+			font-size: 26px;
+			line-height: 20px;
+		}
+	}
+
+	.navbar-nav {
+		li a {
+			padding: 12px 15px;
+		}
+		li.social a {
+			display: none;
+		}
+
+		li a:hover {
+			color: $color-white !important;
+			border-top:none;
+			background-color: rgba(204,153,0,.5) !important;
+		}
+	}
+
+	.navbar-default .navbar-nav .active {
+		a,
+		a:focus, 
+		a:hover {
+			color: $color-white;
+			border-top:none;
+			background-color: rgba(204,153,0,.6);
+			@include transition;
+		}
+	}
+
+	.navbar-toggle {
+		margin-top: 8px;
+	}
+
+	/*--- Main ---*/
+	.main {
+		padding: 170px 15px;
+
+		h1 {
+			font-size: 76px;
+			max-width: 900px;
+			margin: 0 auto 30px;
+		}
+	
+		.button {
+			margin-top: 15px;
+		}
+
+		.btn {
+			margin: 15px 15px 5px;
+			padding: 13px 40px;
+			font-size: 17px;
+		}
+	}
+
+	/*--- About ---*/
+	#about {
+		padding: 90px 0 40px;
+	}
+
+  	/*--- Section Ingredients ---*/
+	#ingredients {
+		padding: 90px 0 70px;
+
+		.content {
+			p {
+				margin: 30px auto 40px;
+			}
+
+			.pics {
+				img {
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Menu ---*/
+	#menu {
+		padding: 90px 0 20px;
+	}
+
+	.menu-group {
+		margin: 0 55px 45px;
+
+		.menu-entry {
+			margin: 20px auto;
+		}
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+
+		.booking {
+			padding: 0 50px;
+		}
+
+		.booking-form {
+			padding: 20px 50px 0;
+		}
+	}
+
+
+	/*--- Footer ---*/
+	footer {
+		padding: 50px 0 25px;
+
+		h3 {
+			margin-bottom: 12px;
+		}
+
+		.col-sm-4 {
+			margin-bottom: 35px;
+		}
+
+		.hours {
+			margin: 20px auto 15px;
+		}
+
+		.address {
+			margin: 20px auto 15px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+
+	/*--- Main ---*/
+	.main {
+		padding: 170px 15px;
+
+		h1 {
+			font-size: 74px;
+		}
+	}
+
+	/*--- Section Menu ---*/
+	.menu-group {
+		margin: 0 25px 45px;
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+
+		.booking {
+			padding: 0 40px;
+		}
+
+		.booking-form {
+			padding: 20px 40px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/*--- Main ---*/
+	.main {
+		padding: 145px 5px;
+
+		h1 {
+			font-size: 66px;
+		}
+
+		.btn {
+			padding: 12px 40px;
+			font-size: 16px;
+		}
+	}
+
+	/*--- About ---*/
+	#about {
+		p.text {
+			margin: 30px auto 30px;
+		}
+	}
+
+	/*--- Section Ingredients ---*/
+	#ingredients {
+		padding: 90px 0 60px;
+
+		.content {
+			p {
+				margin: 30px auto 40px;
+			}
+
+			.pics {
+				img {
+					margin: 0 4px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Menu ---*/
+	#menu {
+		padding: 90px 0 20px;
+	}
+
+	.menu-group {
+		margin: 0 15px 35px;
+
+		h1 {
+			font-size: 33px;
+			margin-bottom: 7px;
+		}
+
+		.menu-entry {
+			margin: 20px auto;
+
+			.menu-entry_title {
+				font-size: 22px;
+			}
+
+			.menu-entry_price {
+				font-size: 22px;
+			}
+
+			.entry-menu_text {
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Reviews ---*/
+	#reviews {
+		padding: 100px 0 90px;
+	}
+
+	.reviews {
+		padding: 50px 35px 40px;
+
+		h1 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 17px;
+		}
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+		.booking {
+			padding: 0 25px;
+		}
+
+		.booking-form {
+			padding: 20px 25px 0;
+
+			.form-group {
+		 		margin-bottom: 15px;
+			}
+		}
+	}
+
+	/*--- Footer ---*/
+	footer {
+		padding: 50px 0 20px;
+
+		h3 {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+	/*--- Main ---*/
+	.main {
+		padding: 140px 2px;
+
+		h1 {
+			font-size: 63px;
+			word-wrap: break-word;
+		}
+	}
+
+	/*--- Section Ingredients ---*/
+	#ingredients {
+		.content {
+			padding: 45px 15px;
+
+			.pics {
+				img {
+					margin: 0 2px;
+				}
+			}
+		}
+	}
+
+	/*--- Section Menu ---*/
+	.menu-group {
+		margin: 0 5px 35px;
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+		padding: 90px 0 50px;
+		
+		img.pic {
+			margin-bottom: 35px;
+		}
+
+		.booking {
+			padding: 0 15px;
+		}
+
+		.booking-form {
+			padding: 10px 15px 0;
+		}
+	}
+
+	/*--- Footer ---*/
+	footer {
+		padding: 45px 0 15px;
+
+		.col-sm-4 {
+			margin-bottom: 30px;
+		}
+
+		p.foot_text {
+			font-size: 15px;
+		}
+
+		.hours {
+			p {
+				font-size: 15px;
+			}
+		}
+
+		.address {
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	/*--- Main ---*/
+	.main {
+		padding: 140px 2px;
+
+		h1 {
+			font-size: 60px;
+			word-wrap: break-word;
+		}
+
+		.btn {
+			margin: 15px 15px 0;
+			padding: 12px 40px;
+			font-size: 16px;
+		}
+	}
+
+	/*--- About ---*/
+	#about {
+		padding: 90px 0 40px;
+
+		h1 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+
+		p.text {
+			font-size: 16px;
+			margin: 30px auto 30px;
+		}
+
+		img.cook {
+			margin-bottom: 20px;
+		}
+	}
+
+	/*--- Section Ingredients ---*/
+	#ingredients {
+		.content {
+			padding: 40px 15px;
+
+			h1 {
+				font-size: 35px;
+			}
+		}
+	}
+
+	/*--- Section Reviews ---*/
+	#reviews {
+		padding: 100px 0 80px;
+	}
+
+	.reviews {
+		padding: 40px 30px 35px;
+
+		h1 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+
+	/*--- Section Reservations ---*/
+	#reservations {
+		img.pic {
+			margin-bottom: 30px;
+		}
+
+		.booking {
+			padding: 0 10px;
+
+			h1 {
+				font-size: 35px;
+			}
+		}
+
+		.booking-form {
+			padding: 20px 10px 0;
+		}
+	}
+}
