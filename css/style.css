@@ -644,8 +644,8 @@ footer .foot_social a i:hover {
   /* line 635, ../sass/_main.scss */
   .main h1 {
     font-size: 80px;
-    max-width: 700px;
-    margin: 50px auto 30px;
+    max-width: 750px;
+    margin: 40px auto 30px;
   }
   /* line 641, ../sass/_main.scss */
   .main .btn {
